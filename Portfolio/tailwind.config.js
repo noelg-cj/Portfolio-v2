@@ -15,7 +15,8 @@ export default {
         figma: 'url(./src/assets/figma_cursor.svg)'
       },
       fontFamily: {
-        'revelia': ['Revelia']
+        'revelia': ['Revelia'],
+        'satoshi': ['Satoshi'],
       }
     },
   },
