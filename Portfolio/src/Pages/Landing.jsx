@@ -17,7 +17,7 @@ const Landing = () => {
     }, []);
 
   return (
-    <div className='h-screen bg-white p-5 mt-14'>
+    <div className='h-screen bg-white p-5 mt-14 overflow-x-hidden'>
         <div className='absolute top-0 left-96 h-full w-[1px] bg-black/35'></div>
         <div className='absolute top-0 right-96 h-full w-[1px] bg-black/35'></div>
         <div className='absolute bottom-32 right-0 w-full h-[1px] bg-black/35'></div>
@@ -29,7 +29,7 @@ const Landing = () => {
                 <div className='bg-primary w-8 h-8 rounded-full '></div>
                 <div className='text-slate-400 mr-3'>#1157FF</div>
             </div>
-            <div className={`bg-primary text-white border-2 border-black inline py-1 px-3 rounded-md ${hovered ? 'opacity-100' : 'opacity-0'} transition-opacity duration-100`}
+            <div className={`bg-primary text-white border-2 border-black py-1 px-3 rounded-md ${hovered ? 'inline' : 'hidden'} transition-opacity duration-100`}
                 style={{
                     position: 'absolute',
                     top: `calc(${mousePos.y}px - 2.5rem)`,
